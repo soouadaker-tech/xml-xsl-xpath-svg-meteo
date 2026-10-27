@@ -11,7 +11,7 @@
         <xsd:sequence>
         <xsd:element name="ville" maxOccurs="unbounded" type="T_VILLE"></xsd:element>
         </xsd:sequence>
-        <xsd:attribute name="date" type="xsd:date" use="required"></xsd:attribute>
+        <xsd:attribute name="date" type="xsd:string" use="required"/>
     </xsd:complexType>
     <xsd:complexType name="T_VILLE">
         <xsd:attribute name="nom" type="xsd:string" use="required"></xsd:attribute>

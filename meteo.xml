@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE meteo SYSTEM "meteo.dtd">
+
 <meteo>
-    <mesure date="2025-02-28">
-        <ville nom="Casablanca" temperature="22"/>
-        <ville nom="Mohammedia" temperature="23"/>
-        <ville nom="Marrakech" temperature="32"/>
+    
+    <mesure date="2006-1-1">
+        <ville nom="Casa" temperature="22"/>
+        <ville nom="Rabat" temperature="20"/>
+        <ville nom="Fes" temperature="18"/>
+        <ville nom="Oujda" temperature="19"/>
         <ville nom="Tanger" temperature="25"/>
-        <ville nom="El Jadida" temperature="26"/>
-        <ville nom="LAAYOUNE" temperature="34"/>
-        <ville nom="OUARZAZATE" temperature="36"/>
-        <ville nom="DAKHLA" temperature="34"/>
-        <ville nom="OUJDA" temperature="31"/>
+        <ville nom="Marrakech" temperature="28"/>
+        <ville nom="Ouarzazat" temperature="29"/>
+        <ville nom="Agadir" temperature="20"/>
     </mesure>
     
-    <mesure date="2024-11-12">
-        <ville nom="Casablanca" temperature="20"/>
-        <ville nom="Mohammedia" temperature="21"/>
-        <ville nom="Marrakech" temperature="30"/>
-        <ville nom="Tanger" temperature="28"/>
-        <ville nom="El Jadida" temperature="27"/>
-        <ville nom="LAAYOUNE" temperature="32"/>
-        <ville nom="OUARZAZATE" temperature="32"/>
-        <ville nom="DAKHLA" temperature="34"/>
-        <ville nom="OUJDA" temperature="28"/>
+    <mesure date="2006-1-2">
+        <ville nom="Casa" temperature="21"/>
+        <ville nom="Rabat" temperature="23"/>
+        <ville nom="Fes" temperature="19"/>
+        <ville nom="Oujda" temperature="20"/>
+        <ville nom="Tanger" temperature="23"/>
+        <ville nom="Marrakech" temperature="27"/>
+        <ville nom="Ouarzazat" temperature="25"/>
+        <ville nom="Agadir" temperature="23"/>
     </mesure>
+    
 </meteo>

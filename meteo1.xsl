@@ -1,38 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     version="3.0">
+    
     <xsl:template match="/">
-    <html>
-        <head>
-            <title>meteo</title>
+        
+        <html>
+            <head>
+                <title>Météo</title>
+            </head>
+            
             <body>
-                <xsl:for-each select="meteo/mesure[@date='2025-02-28']">
+                
+                <h2>Mesure des températures</h2>
+                
+                <xsl:for-each select="meteo/mesure[@date='2006-1-1']">
+                    
                     <ul>
-                        <li>Date mesure : <xsl:value-of select="@date"/></li>
+                        <li>
+                            Date mesure :
+                            <xsl:value-of select="@date"/>
+                        </li>
                     </ul>
-                <table border="1" width="90%">
-                   <tr>
-                       <th>Ville</th>
-                       <th>Température</th>
-                   </tr>
-                    <xsl:for-each select="ville">
-                    <tr>
-                         <td><xsl:value-of select="@nom"/></td>
-                         <td><xsl:value-of select="@temperature"/></td>
-                    </tr>
-                    </xsl:for-each>
-                    <tr>
-                        <td>Nombre de Villes</td>
-                        <td><xsl:value-of select="count(ville)"/></td>
-                    </tr>
-                     <tr>
-                         <td>Temperature Moyenne</td>
-                         <td><xsl:value-of select="avg(ville/@temperature)"/></td>
-                     </tr>
-                </table>
+                    
+                    <table border="1" width="90%">
+                        
+                        <tr>
+                            <th>Ville</th>
+                            <th>Température</th>
+                        </tr>
+                        
+                        <xsl:for-each select="ville">
+                            
+                            <tr>
+                                <td>
+                                    <xsl:value-of select="@nom"/>
+                                </td>
+                                
+                                <td>
+                                    <xsl:value-of select="@temperature"/> °C
+                                </td>
+                            </tr>
+                            
+                        </xsl:for-each>
+                        
+                        <tr>
+                            <td>Nombre de villes</td>
+                            <td>
+                                <xsl:value-of select="count(ville)"/>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Température moyenne</td>
+                            <td>
+                                <xsl:value-of select="avg(ville/@temperature)"/>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    
                 </xsl:for-each>
+                
             </body>
-        </head>
-    </html>
+        </html>
+        
     </xsl:template>
+    
 </xsl:stylesheet>
